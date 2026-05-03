@@ -11,16 +11,17 @@ import react from '../assets/images/React.png'
 import tailwind from '../assets/images/Tailwind CSS.png'
 import github from '../assets/images/GitHub.png'
 import vite from '../assets/images/Vite.js.png'
+import type { Mesh } from 'three'
 
 export const About = () => {
 
-  const boxRef1 = useRef(null)
-  const boxRef2 = useRef(null)
-  const boxRef3 = useRef(null)
-  const boxRef4 = useRef(null)
-  const boxRef5 = useRef(null)
-  const boxRef6 = useRef(null)
-  const boxRef7 = useRef(null)
+  const boxRef1 = useRef<Mesh>(null!)
+  const boxRef2 = useRef<Mesh>(null!)
+  const boxRef3 = useRef<Mesh>(null!)
+  const boxRef4 = useRef<Mesh>(null!)
+  const boxRef5 = useRef<Mesh>(null!)
+  const boxRef6 = useRef<Mesh>(null!)
+  const boxRef7 = useRef<Mesh>(null!)
 
   function CanvasContent() {
     useFrame(()=> {

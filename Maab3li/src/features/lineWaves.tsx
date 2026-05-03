@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 import '../App.css';
 
-function hexToVec3(hex) {
+function hexToVec3(hex:any) {
   const h = hex.replace('#', '');
   return [
     parseInt(h.slice(0, 2), 16) / 255,
@@ -150,16 +150,16 @@ export default function LineWaves({
 
   useEffect(() => {
     if (!containerRef.current) return;
-    const container = containerRef.current;
-    const renderer = new Renderer({ alpha: true, premultipliedAlpha: false });
+    const container:any = containerRef.current;
+    const renderer:any = new Renderer({ alpha: true, premultipliedAlpha: false });
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);
 
-    let program;
+    let program:any;
     let currentMouse = [0.5, 0.5];
     let targetMouse = [0.5, 0.5];
 
-    function handleMouseMove(e) {
+    function handleMouseMove(e:any) {
       const rect = gl.canvas.getBoundingClientRect();
       targetMouse = [
         (e.clientX - rect.left) / rect.width,
@@ -213,9 +213,9 @@ export default function LineWaves({
       gl.canvas.addEventListener('mouseleave', handleMouseLeave);
     }
 
-    let animationFrameId;
+    let animationFrameId:any;
 
-    function update(time) {
+    function update(time:any) {
       animationFrameId = requestAnimationFrame(update);
       program.uniforms.uTime.value = time * 0.001;
 
