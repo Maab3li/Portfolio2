@@ -11,6 +11,8 @@ import react from '../assets/images/React.png'
 import tailwind from '../assets/images/Tailwind CSS.png'
 import github from '../assets/images/GitHub.png'
 import vite from '../assets/images/Vite.js.png'
+import 'swiper/css';
+import 'swiper/modules'
 import type { Mesh } from 'three'
 
 export const About = () => {
