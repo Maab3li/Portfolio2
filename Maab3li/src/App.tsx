@@ -5,17 +5,22 @@ import { About } from './pages/About'
 import { Projects } from './pages/Projects'
 import { Contact } from './pages/Contact'
 import  Navbar  from './components/Navbar'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 function App() {
 
+  const queryClient = new QueryClient()
+
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Home /> 
-      <About />
-      <Projects />
-      <Contact />
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Navbar />
+        <Home /> 
+        <About />
+        <Projects />
+        <Contact />
+      </BrowserRouter>
+    </QueryClientProvider>
   )
 }
 

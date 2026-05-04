@@ -6,7 +6,7 @@ import { BlurIn } from '../features/blurInTextAnimation';
 export const Home = () => {
   return (
     <div id='home' className='w-[100%] h-[100vh]'>
-        <img src={bg} alt='background image' className='absolute w-[100%] h-[100%]' />
+        <img src={bg} alt='background image' className='absolute w-[100%] h-[100%]' fetchPriority='high' />
         <div className='relative h-[300px] mt-[100px] place-content-center'>
             <BlurIn>
                 <div className='h-max-content pb-2 bg-clip-text text-transparent bg-linear-to-r from-[#FDC700] via-[#FFFBEB] to-[] text-[3rem]/12 font-bold px-10'>
