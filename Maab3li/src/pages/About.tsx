@@ -12,6 +12,7 @@ import tailwind from '../assets/images/Tailwind CSS.png'
 import github from '../assets/images/GitHub.png'
 import vite from '../assets/images/Vite.js.png'
 import 'swiper/modules'
+import '../App.css'
 import type { Mesh } from 'three'
 
 export const About = () => {
@@ -110,7 +111,7 @@ export const About = () => {
             <GradualSpacing text="What I do?" />
         </div>
         <div className="px-10 pt-10 text-[2rem]/8 text-yellow-100 backdrop-opacity-10 z-9999">
-            <TypingEffect text="I translate ideas into a visually nice appearing websites with focus on performance and UI&UX." time={2000} />
+            <TypingEffect text="I translate ideas into a visually nice appearing websites with focus on performance and UI/UX." time={2000} />
         </div>
         <LineWaves
         speed={0.3}

@@ -6,7 +6,8 @@ import extensions from '../assets/images/Screenshot_8.png'
 import todolist from '../assets/images/Screenshot_5.png'
 import minaclinic from '../assets/images/Screenshot_11.png'
 import { Autoplay, EffectFade } from 'swiper/modules';
-
+import 'swiper/css/bundle'
+import 'swiper/css';
 
 export const Projects = () => {
 
