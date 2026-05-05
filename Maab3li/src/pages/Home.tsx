@@ -2,11 +2,17 @@ import bg from '../assets/images/a-colorful-night-sky-with-stars-and-clouds-phot
 import { motion } from "motion/react"
 import { NavHashLink as Link } from 'react-router-hash-link';
 import { BlurIn } from '../features/blurInTextAnimation';
+import { getHomeImage } from '../hooks/getHomeImage';
 
 export const Home = () => {
+
+    const { homeImage, isHomeImageLoading } = getHomeImage()
+
   return (
     <div id='home' className='w-[100%] h-[100vh]'>
-        <img src={bg} alt='background image' className='absolute w-[100vw] h-[100vh]' fetchPriority='high' />
+        {isHomeImageLoading?<h1>Loading...</h1>:
+            <img src={bg} alt='background image' className='absolute w-[100vw] h-[100vh]' fetchPriority='high' />
+        }
         <div className='relative h-[300px] mt-[100px] place-content-center'>
             <BlurIn>
                 <div className='h-max-content pb-2 bg-clip-text text-transparent bg-linear-to-r from-[#FDC700] via-[#FFFBEB] to-[] text-[3rem]/12 font-bold px-10'>
