@@ -31,27 +31,27 @@ export const Projects = () => {
         >
         <SwiperSlide>
           <a href='https://maab3li.github.io/device-shop-checkout-master' target="_blank">
-            <img src={deviceshop} alt="device shop app image" /> 
+            <img src={deviceshop} alt="device shop app image" fetchPriority="low" /> 
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='https://maab3li.github.io/Simple-coffee-listing-app' target="_blank">
-            <img src={coffeeshop} alt="coffee shop app image" />
+            <img src={coffeeshop} alt="coffee shop app image" fetchPriority="low" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='https://maab3li.github.io/browser-extensions-manager-ui-main' target="_blank">
-            <img src={extensions} alt="extensions app image" />
+            <img src={extensions} alt="extensions app image" fetchPriority="low" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='https://maab3li.github.io/device-shop-checkout-master' target="_blank">
-            <img src={todolist} alt="todolist app image" />
+            <img src={todolist} alt="todolist app image" fetchPriority="low" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='https://maab3li.github.io/Mina-clinic' target="_blank">
-            <img src={minaclinic} alt="mina clinic app image" />
+            <img src={minaclinic} alt="mina clinic app image" fetchPriority="low" />
           </a>
         </SwiperSlide>
       </Swiper>
